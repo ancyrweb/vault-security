@@ -3,7 +3,7 @@ aliases: [Risk, Residual Risk]
 ---
 **Risk** = **likelihood** × **impact**: how likely an attack is, times the damage if it succeeds. Every defense should decrease likelihood, impact, or both.
 
-- **CVSS** (Common Vulnerability Scoring System) gives vulnerabilities a standardized score.
+- [[Common Vulnerability Scoring System|CVSS]] rates vulnerability severity (exploitability and impact), not risk: how likely an attack is in your environment has to be assessed separately.
 - [[Attack Surface Minimization]] lowers risk by removing what can be attacked.
 
 ## Residual risk
