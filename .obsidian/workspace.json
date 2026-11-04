@@ -46,10 +46,14 @@
             "id": "d736ac17c979c429",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "knowledge/Common Vulnerability Scoring System.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Common Vulnerability Scoring System"
             }
           }
         ]
@@ -110,7 +114,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -221,15 +226,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5e15ba1aa48e7e00",
+  "active": "c1a8d411119585d9",
   "lastOpenFiles": [
-    "Untitled",
+    "knowledge/Security Risk.md",
+    "knowledge/Common Vulnerability Scoring System.md",
+    "knowledge/API Security.md",
+    "CLAUDE.md",
+    "Welcome.md",
+    "knowledge/Input Validation.md",
+    "knowledge/Index.md",
+    "knowledge/Defense in Depth.md",
+    "knowledge/Attack Surface Minimization.md",
     "courses/pluralsight/api-security-best-practices/Notes.md",
+    "knowledge/Supply Chain Attack.md",
+    "knowledge/Threat Modeling.md",
+    "knowledge/Security Principles.md",
+    "Untitled",
     "courses/pluralsight/api-security-best-practices",
     "knowledge",
     "courses/pluralsight",
-    "courses",
-    "CLAUDE.md",
-    "Welcome.md"
+    "courses"
   ]
 }

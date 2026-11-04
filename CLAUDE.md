@@ -17,6 +17,8 @@ The vault has two layers: **source notes** (what was learned from one specific s
 
 Source notes stay faithful to their source. `knowledge/` notes merge what several sources say about one concept. When a source note is added or updated, the usual follow-up is to fold its content into `knowledge/`: extend existing concept notes instead of duplicating them, create new ones where needed, and link each knowledge note back to the source notes it draws on (`[[courses/pluralsight/api-security-best-practices/Notes|API Security Best Practices]]`). Every source folder has a file named `Notes.md`, so links to them need the full path to be unambiguous.
 
+Use the `sync-knowledge` skill (`.claude/skills/sync-knowledge/`) for this. It finds source changes since the last `knowledge: sync` commit, updates `knowledge/`, and makes the next sync commit, so don't commit knowledge updates under another message.
+
 ## Working in the vault
 
 - **Notes are plain Markdown** with Obsidian extensions. Link with wikilinks (`[[Note Name]]`, `[[Note Name#Heading]]`, `[[Note Name|alias]]`), not relative Markdown links, so backlinks and the graph view work. A wikilink to a note that doesn't exist yet is fine: it marks a note to write later.
