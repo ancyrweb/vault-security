@@ -58,4 +58,82 @@ Approaches :
 	- **Solution**
 		- Don't log sensitive information in logs
 		- Put thoughts in logging
-	
+
+# Managing API secrets and private data
+
+- Where not to store secrets :
+	- Don't store secrets in code
+	- Private repositories aren't safe either
+- Using Cryptography effectively
+	- Hashing
+		- One-way encryption
+		- The result represent the original data
+		- It doesn't contain it so we can't rewind
+		- Returns a digest
+		- Slight change in input result in large change in output
+		- Useful for data you never need to see again like passwords
+		- Nowadays, Argon2id is preferred (2026)
+	- Symmetric Encryption
+		- Two-way encryption
+		- The same key both encrypts and decrypts
+		- Encrypt the data with the key -> get ciphertext
+		- Decrypt ciphertext with the key to get data
+	- Asymmetric Encryption
+		- Two-way encryption
+		- Two keys
+			- Public key : encrypts the data
+			- Private key : decrypts the data
+	- Every API call should use TLS
+		- Latest version
+		- Test TLS connection with `SSL Labs`test
+- Using Signatures
+	- Take a file (like a PDF) and sign it to get a digest
+	- The digest prove the file hasn't been altered
+	- Next : keep the digest itself safe
+		- Encrypt it using the private key to get a signed PDF
+		- Decrypt it using the public key
+- Database Encryption
+	- Sensitive information in database should be protected
+		- Using symmetric encryption, manually
+		- Con : can't search encrypted data
+	- Encryption at rest
+		- Databases stored as files
+		- These files can be encrypted at rest
+		- It happens transparently 
+
+# Implementing API Authentication mechanisms
+
+- Authentication
+	- Is about identifying the user
+	- Distinguish a user and their permissions from another
+	- Mistakes mean malicious logins
+- Methods
+	- Username / Password based authentication
+		- Username uniquely identify the user
+		- Password is evidence *they* created the account
+		- E-mail confirmation is evidence they *own* the e-mail address
+	- Multi-Factor Authentication
+		- Combine multiple informations
+			- Something you know
+				- Password
+			- Something you have
+				- Digital Security Key
+				- Mobile phone
+				- One-time PINs
+			- Something you are
+				- Fingerprint
+				- Face scans
+			- Where you are
+	- Tokens and sessions
+		- Most APIs don't use sessions
+		- Most APIs don't rely on cookies either
+		- They rely on API keys and tokens
+		- JSON Web Tokens are the most used
+	- OpenID connect
+		- Standard for robust authentication
+		- Typically based on JWTs
+		- Complicated
+		- Uses long-lived refresh token and short-lived access-token
+	- Machine to machine authentication
+		- Uses Mutual TLS
+		- IP allow list
