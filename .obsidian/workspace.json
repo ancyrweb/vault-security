@@ -4,56 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "04d6cdd5d7738278",
+        "id": "5b9cad41f52dae56",
         "type": "tabs",
         "children": [
           {
-            "id": "c6b9a9eed0943bd6",
+            "id": "67cb51506f3614c8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Welcome.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Welcome"
-            }
-          },
-          {
-            "id": "c1a8d411119585d9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "courses/pluralsight/api-security-best-practices/Notes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Notes"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "8de8aacc57447e97",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d736ac17c979c429",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledge/Common Vulnerability Scoring System.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Common Vulnerability Scoring System"
+              "title": "New tab"
             }
           }
         ]
@@ -114,8 +75,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -226,18 +186,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c1a8d411119585d9",
+  "active": "67cb51506f3614c8",
   "lastOpenFiles": [
+    "Welcome.md",
+    "courses/pluralsight/api-security-best-practices/Notes.md",
+    "knowledge/OpenID Connect.md",
+    "knowledge/Multi-Factor Authentication.md",
+    "knowledge/Authentication.md",
+    "knowledge/Database Encryption.md",
+    "knowledge/Transport Layer Security.md",
+    "knowledge/Digital Signature.md",
+    "knowledge/Asymmetric Encryption.md",
+    "knowledge/Symmetric Encryption.md",
+    "knowledge/Hashing.md",
+    "knowledge/Cryptography.md",
     "knowledge/Security Risk.md",
     "knowledge/Common Vulnerability Scoring System.md",
     "knowledge/API Security.md",
     "CLAUDE.md",
-    "Welcome.md",
     "knowledge/Input Validation.md",
     "knowledge/Index.md",
     "knowledge/Defense in Depth.md",
     "knowledge/Attack Surface Minimization.md",
-    "courses/pluralsight/api-security-best-practices/Notes.md",
     "knowledge/Supply Chain Attack.md",
     "knowledge/Threat Modeling.md",
     "knowledge/Security Principles.md",
