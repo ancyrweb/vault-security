@@ -7,6 +7,7 @@ aliases: [Attack Surface Reduction]
 - Reduce the amount of data the API returns.
 - Remove old databases that are no longer used.
 - Remove unused functionality from libraries.
+- Remove forgotten or undocumented endpoints and features: attackers abuse these "shadow functions".
 
 ## Sources
 - [[courses/pluralsight/api-security-best-practices/Notes|API Security Best Practices]] (course, Pluralsight)

@@ -1,4 +1,4 @@
-**Authentication** identifies the user, distinguishing one user and their permissions from another. Mistakes mean malicious logins.
+**Authentication** identifies the user, distinguishing one user and their permissions from another. Mistakes mean malicious logins. What an identified user may then do is [[Authorization]].
 
 ## Methods
 - **Username and password**: the username uniquely identifies the user, the password is evidence *they* created the account, and e-mail confirmation is evidence they *own* the address. See [[Hashing]] for storing passwords.

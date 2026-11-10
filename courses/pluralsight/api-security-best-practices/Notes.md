@@ -137,3 +137,36 @@ Approaches :
 	- Machine to machine authentication
 		- Uses Mutual TLS
 		- IP allow list
+
+# Designing and Evaluating API Authorization
+
+- **Role-Based Model** : users have a role and this role determines what they can do
+- **Access Control Matrix** : a table determines the right of a specific user for a specific subject under tuple `[user, subject, right]`. 
+- **Separate Admin API :** separate the regular API from admin API such that the admin API has much more restrictions (like IP allow list)
+- **Broken Object Level Authorization (BOLA) or Insecure Direct Object Reference (IDOR)** : it happens when the app properly check user's authentication but doesn't properly check if they are allowed to perform an object or a resource.
+	- **Always scope SQL requests** : even if it's redundant, ensure the user never access resources they shouldn't have access to. Example : when the URL is `foobar.com/organization/123/invoice/456` then the SQL request should scope on Organization ID 123 and Invoice 456.
+	- Use GUIDs instead of something guessable
+- **Broken Object Property Level Authorization (BOPLA)** : occurs when an API correctly checks whether a user has permission to access an object as a whole, but fails to enforce granular authorization checks on the **individual properties** (fields) inside that object
+
+# Analyzing and preventing API Injection Vulnerabilities
+
+- **Cross-site Scripting (XSS)** : attackers inject JavaScript code that is executed by users.
+- **SQL Injection** : running custom SQL on the database
+- **NoSQL Injection** : similar, but with different syntax
+- **Server-Side Request Forgery (SSRF)** : security vulnerability where an attacker tricks a web server into making unintended requests to internal resources, local systems (`localhost`, `127.0.0.1`), or cloud metadata endpoints
+- Defenses
+	- **Web Application Firewall** : look at incoming request and try to detect if there's something malicious in it. 
+	- **Ingress Filtering** : allow only some specific trafic in
+	- Authentication
+	- Input Validation
+	- Sanitization of Input
+
+
+# Designing resilient APIs : Stress, failure and unexpected input
+
+- **Time of Check - Time of Use (TOCTOU)** : if the data has changed between the time of check and the time of use, we might have a vulnerability. Exemple : applying a time-limited discount code.
+- **Shadow Function Abuse (SFA)** : undocumented endpoints or features that were forgotten
+- Memory Management Failures
+	- **Buffer Overflow** : user input exceeds allocated memory, overwrite memory
+	- **Integer Overflows** : numeric value exceeds it's maximum, wraps around to zero
+	- **Memory Exhaustion** : allocated memory isn't deallocated

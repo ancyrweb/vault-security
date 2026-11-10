@@ -4,3 +4,4 @@ Entry point to the knowledge graph.
 - [[API Security]]: protecting APIs, from design principles and threats to secrets and authentication
 - [[Cryptography]]: hashing, encryption, signatures and TLS
 - [[Authentication]]: identifying users and machines, from passwords and MFA to tokens and OpenID Connect
+- [[Authorization]]: deciding what an identified user may do, and how object-level checks break

@@ -3,6 +3,7 @@
 - Expect incoming data to be manipulated.
 - Validate all input.
 - Put thought into the validation rules rather than treating them as an afterthought.
+- Sanitize input as well; validation and sanitization are both defenses against [[Injection]].
 
 ## Sources
 - [[courses/pluralsight/api-security-best-practices/Notes|API Security Best Practices]] (course, Pluralsight)
