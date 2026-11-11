@@ -11,10 +11,14 @@
             "id": "67cb51506f3614c8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "courses/pluralsight/api-security-best-practices/Notes.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Notes"
             }
           }
         ]
@@ -186,8 +190,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "67cb51506f3614c8",
+  "active": "5e15ba1aa48e7e00",
   "lastOpenFiles": [
+    "knowledge/Memory Management Failures.md",
+    "knowledge/Injection.md",
+    "knowledge/Broken Object Level Authorization.md",
+    "knowledge/Authorization.md",
     "Welcome.md",
     "courses/pluralsight/api-security-best-practices/Notes.md",
     "knowledge/OpenID Connect.md",
@@ -210,7 +218,6 @@
     "knowledge/Attack Surface Minimization.md",
     "knowledge/Supply Chain Attack.md",
     "knowledge/Threat Modeling.md",
-    "knowledge/Security Principles.md",
     "Untitled",
     "courses/pluralsight/api-security-best-practices",
     "knowledge",
